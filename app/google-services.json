@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "611177609179",
+    "project_id": "aplikasinota",
+    "storage_bucket": "aplikasinota.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611177609179:android:336daaf6f9be1dee6f19fe",
+        "android_client_info": {
+          "package_name": "com.example.aplikasinota"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcgmOow3DNTgYaQkaeeIX2R5yhLZEeKw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

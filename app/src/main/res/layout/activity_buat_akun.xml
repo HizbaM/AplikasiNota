@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgreen"
+    tools:context=".BuatAkunActivity">
+
+    <ImageView
+        android:id="@+id/ivLogoBuatAkun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/baseline_person_add_24"
+        android:tint="@color/white"
+        android:background="#18A382"/>
+
+    <TextView
+        android:id="@+id/tvHalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_margin="10dp"
+        android:layout_below="@id/ivLogoBuatAkun"/>
+
+    <TextView
+        android:id="@+id/tvAyoBuatAkun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ayo Buat Akun!"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvHalo"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etNamaPengguna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Pengguna"
+        android:background="@color/white"
+        android:textColorHint="@color/lightgreen"
+        android:textSize="28sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_below="@id/tvAyoBuatAkun"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etKataSandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kata Sandi"
+        android:textColorHint="@color/lightgreen"
+        android:shadowColor="@color/white"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_below="@id/etNamaPengguna"
+        android:textSize="28sp"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:padding="5dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etKataSandiKonfirmasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kata Sandi (Konfirmasi)"
+        android:textColorHint="@color/lightgreen"
+        android:shadowColor="@color/white"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_below="@id/etKataSandi"
+        android:textSize="28sp"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:padding="5dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuatAkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buat Akun"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/lightgreen"
+        android:textSize="28sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_below="@id/etKataSandiKonfirmasi"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:id="@+id/viewBawahTombol"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/btnBuatAkun"
+        />
+
+
+</RelativeLayout>
