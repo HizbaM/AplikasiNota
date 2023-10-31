@@ -1,8 +1,11 @@
 package com.example.aplikasinota
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
@@ -14,7 +17,9 @@ class BuatAkunActivity : AppCompatActivity() {
     private lateinit var etKataSandi0: TextInputEditText
     private lateinit var etKataSandiKonfirmasi0: TextInputEditText
     private lateinit var btnBuatAkun0: MaterialButton
+    private lateinit var tvBuatAkun0: TextView
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buat_akun)
@@ -23,9 +28,15 @@ class BuatAkunActivity : AppCompatActivity() {
         etKataSandi0 = findViewById(R.id.etKataSandi)
         etKataSandiKonfirmasi0 = findViewById(R.id.etKataSandiKonfirmasi)
         btnBuatAkun0 = findViewById(R.id.btnBuatAkun)
+        tvBuatAkun0 = findViewById(R.id.tvBuatAkun)
 
         btnBuatAkun0.setOnClickListener {
             BuatAkun()
+        }
+
+        tvBuatAkun0.setOnClickListener {
+            val mulaiintent= Intent(this,LoginActivity::class.java)
+            startActivity(mulaiintent)
         }
     }
 

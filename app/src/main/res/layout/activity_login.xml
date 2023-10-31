@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightgreen"
-    tools:context=".BuatAkunActivity">
-
+    tools:context=".LoginActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <ImageView
             android:id="@+id/ivLogoBuatAkun"
             android:layout_centerHorizontal="true"
@@ -36,7 +36,7 @@
             android:id="@+id/tvAyoBuatAkun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ayo Buat Akun!"
+            android:text="Selamat Datang Kembali :)"
             android:textColor="@color/white"
             android:textSize="36sp"
             android:fontFamily="@font/poppins_semibold"
@@ -71,31 +71,17 @@
             android:inputType="textPassword"
             android:padding="5dp"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etKataSandiKonfirmasi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Kata Sandi (Konfirmasi)"
-            android:textColorHint="@color/lightgreen"
-            android:shadowColor="@color/white"
-            android:background="@color/white"
-            android:fontFamily="@font/poppins_semibold"
-            android:layout_below="@id/etKataSandi"
-            android:textSize="28sp"
-            android:inputType="textPassword"
-            android:layout_margin="10dp"
-            android:padding="5dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnBuatAkun"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Buat Akun"
+            android:text="Masuk"
             android:backgroundTint="@color/white"
             android:textColor="@color/lightgreen"
             android:textSize="28sp"
             android:fontFamily="@font/poppins_semibold"
-            android:layout_below="@id/etKataSandiKonfirmasi"
+            android:layout_below="@id/etKataSandi"
             android:layout_margin="10dp"/>
 
         <View
@@ -114,11 +100,9 @@
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Sudah Punya Akun? Ayo Masuk!"/>
+            android:text="Belum Punya Akun? Ayo Buat!"/>
 
     </RelativeLayout>
-
-
 
 
 </ScrollView>

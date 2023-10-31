@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgreen"
+    tools:context=".DetailNotaActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTambahkanNotaBaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:text="Tambahkan Nota Baru"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/poppins_semibold"/>
+
+        <ImageButton
+            android:id="@+id/ibCeklis"
+            android:layout_margin="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/baseline_check_24"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlAtas">
+
+        <EditText
+            android:id="@+id/etJudulNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Judul"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/lightgreen"
+            />
+
+        <EditText
+            android:id="@+id/etisiNota"
+            android:layout_below="@id/etJudulNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Isi"
+            android:minLines="15"
+            android:textSize="20sp"
+            android:padding="15dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/lightgreen"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
